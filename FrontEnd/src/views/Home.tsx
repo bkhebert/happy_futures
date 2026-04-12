@@ -8,7 +8,7 @@ function Home() {
   const [count, setCount] = useState(0)
 
 return (
- <div className="min-h-screen bg-brand-gradient bg-fixed flex items-center justify-center px-6 py-10">
+ <div className="min-h-screen bg-dark-gradient bg-fixed flex items-center justify-center px-6 py-10">
       
       {/* Container */}
       <div className="w-full max-w-7xl flex flex-col md:flex-row gap-10">

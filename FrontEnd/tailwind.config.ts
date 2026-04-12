@@ -42,6 +42,7 @@ export default {
 
   backgroundImage: {
     'brand-gradient': 'linear-gradient(135deg, #121315, #1d2c40, #34486e, #627e9e, #6b95cd, #71bcf9)',
+    'dark-gradient': 'linear-gradient(135deg, #121315, #1d2c40, #767979, #272929, #0C1010, #202323)',
   },
 
   boxShadow: {
