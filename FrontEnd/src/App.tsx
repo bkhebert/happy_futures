@@ -17,8 +17,8 @@ function App() {
           <Route path="/" element={<Home />} />
 
           {/* Placeholder pages */}
-          <Route path="/about" element={<div className="p-10">About Page</div>} />
-          <Route path="/contact" element={<div className="p-10">Contact Page</div>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         </Route>
 
       </Routes>
