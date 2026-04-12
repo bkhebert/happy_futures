@@ -43,8 +43,11 @@ export default {
   backgroundImage: {
     'brand-gradient': 'linear-gradient(135deg, #121315, #1d2c40, #34486e, #627e9e, #6b95cd, #71bcf9)',
     'dark-gradient': 'linear-gradient(135deg, #121315, #1d2c40, #767979, #272929, #0C1010, #202323)',
+     'grid-pattern': 'linear-gradient(rgba(107, 205, 200, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(107, 205, 200, 0.05) 1px, transparent 1px)',
   },
-
+ backgroundSize: {
+      'grid': '50px 50px',
+    },
   boxShadow: {
     glow: '0 0 15px #a4cd6b',
   },
