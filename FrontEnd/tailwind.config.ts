@@ -18,28 +18,34 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
-      colors: {    
-            covenantDark: '#1a132d',
-    covenantLight: '#3a2a5d',
-    covenantAccent: '#7c4dff',
-    neonBlue: '#00e5ff',
-        primary: '#6813F1',
-        primarydark: '#1E142E',
-        primarylight: '#A128E3',
-        primaryglow: '#D8ABF4',
-        cstmbackground: '#2b263d',
-        cstmdarkaccent: '#412476',
-        cstmgold: '#FFD700',
-        cstmgray: '#4A4E69',
-        cstmgreen: '#A8FF60',
-        cstmred: '#FF4F58',
-        cstmblack: '#111016',
-        cstmneutral: '#E0E0E3',
-        cstmblue: '#00D9FF',
-        cstmwhite: '#F7F6F9', 
-      },
-      boxShadow: {
-    glow: '0 0 10px #7c4dff',
+ colors: {
+    // Base UI shades
+    background: '#121515',
+    surface: '#393c3c',
+    border: '#656868',
+    muted: '#959898',
+    foreground: '#c7cbcb',
+
+    // Brand / accent system
+    primary: '#346e54',
+    primaryLight: '#629e64',
+    primaryDark: '#1d4039',
+
+    highlight: '#a4cd6b',
+    glow: '#f9f871',
+
+    // Optional semantic colors (future-proofing)
+    success: '#629e64',
+    warning: '#f9f871',
+    danger: '#ff4f58', // you can keep this from old config if useful
+  },
+
+  backgroundImage: {
+    'brand-gradient': 'linear-gradient(135deg, #121515, #1d4039, #346e54, #629e64, #a4cd6b, #f9f871)',
+  },
+
+  boxShadow: {
+    glow: '0 0 15px #a4cd6b',
   },
       borderRadius: {
         lg: `var(--radius)`,
