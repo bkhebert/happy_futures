@@ -17,17 +17,17 @@ type TeamMember = {
 
 const team: TeamMember[] = [
   {
-    name: "John Doe",
-    title: "Founder / CEO",
-    image: "https://via.placeholder.com/150",
+    name: "Max Dandry",
+    title: "Founder / CEO / Lead Engineer",
+    image: "/MaxProfilePic.png",
     description: "Short description about experience and background.",
     bio: "Visionary leader with 15+ years in robotics and AI. Previously led engineering teams at leading autonomous vehicle companies.",
     expertise: ["AI Strategy", "Robotics Systems", "Venture Building"],
   },
   {
-    name: "Jane Smith",
-    title: "Lead Engineer",
-    image: "https://via.placeholder.com/150",
+    name: "Barrington Hebert",
+    title: "Lead Software Engineer",
+    image: "BarryProfilePic.png",
     description: "Another short description about skills and experience.",
     bio: "Robotics engineer specializing in autonomous navigation and sensor fusion. PhD in Robotics from MIT with multiple patents in mobile robotics.",
     expertise: ["Autonomous Navigation", "Sensor Fusion", "Embedded Systems"],
