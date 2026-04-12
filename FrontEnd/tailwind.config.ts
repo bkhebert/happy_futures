@@ -27,12 +27,12 @@ export default {
     foreground: '#c7cbcb',
 
     // Brand / accent system
-    primary: '#346e54',
-    primaryLight: '#629e64',
-    primaryDark: '#1d4039',
+    primary: '#215374',
+    primaryLight: '#628b9e',
+    primaryDark: '#1d3640',
 
-    highlight: '#a4cd6b',
-    glow: '#f9f871',
+    highlight: '#6bcdc8',
+    glow: '#71f9f2',
 
     // Optional semantic colors (future-proofing)
     success: '#629e64',
@@ -41,7 +41,7 @@ export default {
   },
 
   backgroundImage: {
-    'brand-gradient': 'linear-gradient(135deg, #121515, #1d4039, #346e54, #629e64, #a4cd6b, #f9f871)',
+    'brand-gradient': 'linear-gradient(135deg, #121315, #1d2c40, #34486e, #627e9e, #6b95cd, #71bcf9)',
   },
 
   boxShadow: {
