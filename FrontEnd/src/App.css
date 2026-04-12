@@ -11,21 +11,6 @@ html, body {
   width: 100%;
   background: black;
 }
-.page {
-  width: 100%;
-  background: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image {
-  
-  width: 100%;
- max-width: 1280px;  /* optional: remove if you want FULL full width */
-  height: auto;       /* natural height → scrolling */
-  display: block;
-}
 
 
 .logo {
