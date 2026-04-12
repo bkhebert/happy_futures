@@ -137,3 +137,91 @@ button:focus-visible {
   body {
   }
 }
+
+/* Add to your index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations and utilities */
+@layer utilities {
+  /* Grid pattern for background */
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(107, 205, 200, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(107, 205, 200, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Glow animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Gradient text animation */
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 8s ease infinite;
+  }
+
+  /* Delay utilities */
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .delay-500 {
+    animation-delay: 500ms;
+  }
+  
+  .delay-1000 {
+    animation-delay: 1000ms;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121515;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #393c3c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6bcdc8;
+}
+
+/* Selection color */
+::selection {
+  background: #6bcdc8;
+  color: #121515;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #6bcdc8;
+  outline-offset: 2px;
+}
