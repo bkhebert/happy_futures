@@ -8,11 +8,13 @@ function Home() {
   const [count, setCount] = useState(0)
 
 return (
-
- <div className="page">
-<img src={yearofthewagon} className="image" alt="HF" />
-   </div>
-
+    <div className="w-full flex justify-center">
+      <img
+        src={yearofthewagon}
+        className="w-full max-w-6xl"
+        alt="HF"
+      />
+    </div>
   );
 }
 
