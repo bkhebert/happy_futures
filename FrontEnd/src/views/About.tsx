@@ -20,17 +20,29 @@ const team: TeamMember[] = [
     name: "Max Dandry",
     title: "Founder / CEO / Lead Engineer",
     image: "/MaxProfilePic.png",
-    description: "Short description about experience and background.",
-    bio: "Visionary leader with 15+ years in robotics and AI. Previously led engineering teams at leading autonomous vehicle companies.",
-    expertise: ["AI Strategy", "Robotics Systems", "Venture Building"],
+    description: "Builder focused on practical, real-world robotics.",
+    bio: "Max Dandry is a hands-on builder with a background in fabrication, electrical work, and rapid prototyping. He builds systems from the ground up, combining mechanical design, electronics, and software into working machines. His approach is rooted in real-world testing, fast iteration, and solving practical problems.",
+    expertise: [
+    "Robotics Prototyping",
+    "Mechanical Fabrication",
+    "Electrical Wiring & Integration",
+    "System Integration",
+    "Rapid Iteration & Testing"
+  ],
   },
   {
     name: "Barrington Hebert",
     title: "Lead Software Engineer",
     image: "BarryProfilePic.png",
-    description: "Another short description about skills and experience.",
-    bio: "Robotics engineer specializing in autonomous navigation and sensor fusion. PhD in Robotics from MIT with multiple patents in mobile robotics.",
-    expertise: ["Autonomous Navigation", "Sensor Fusion", "Embedded Systems"],
+    description: "Software developer with a passion for robotics and AI.",
+    bio: "Founding engineer working directly with the CEO to build and maintain the company’s digital infrastructure. He develops the website, user experience, and backend systems, while also creating and managing data pipelines that support analysis and future product development. His work focuses on building scalable, practical systems that support both technical operations and business growth.",
+    expertise:[
+    "Full-Stack Development",
+    "React & TypeScript",
+    "Node.js & APIs",
+    "Data Handling & Analysis",
+    "Cloud Deployment"
+  ],
   },
 ];
 
