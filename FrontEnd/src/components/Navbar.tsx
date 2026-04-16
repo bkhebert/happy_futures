@@ -7,7 +7,7 @@ function Navbar() {
         
         {/* Logo / Brand */}
         <div className="text-lg font-bold text-highlight">
-          MyCompany
+          HFRobotics
         </div>
 
         {/* Navigation Links */}
