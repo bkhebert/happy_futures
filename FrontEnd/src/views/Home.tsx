@@ -193,12 +193,14 @@ function CTASection() {
         <p className="text-xl text-muted mb-8 max-w-2xl mx-auto">
           Join us in revolutionizing autonomous robotics. Be part of the next breakthrough in mobile AI technology.
         </p>
+        <Link to="/contact">
         <button className="px-10 py-5 bg-gradient-to-r from-highlight to-glow rounded-xl 
                          text-background font-bold text-lg shadow-glow
                          hover:scale-105 hover:shadow-2xl transition-all duration-300
                          animate-pulse">
           Partner With Us
         </button>
+        </Link>
       </div>
     </div>
   );
