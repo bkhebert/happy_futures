@@ -3,6 +3,8 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import SectionRow from "../components/SectionRow";
 import productImage from "/yearofthewagon.jpg";
+import productImage2 from "/yearofthewagon2.jpg";
+import productImage3 from "/yearofthewagon3.jpg";
 import logo from "/hflogosmall.png";
 
 function Home() {
