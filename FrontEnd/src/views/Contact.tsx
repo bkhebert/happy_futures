@@ -476,9 +476,9 @@ function FormField({
 function AlternativeContact() {
   const platforms = [
     { name: "LinkedIn", icon: "💼", url: "#" },
-    { name: "Twitter/X", icon: "🐦", url: "#" },
+    { name: "Twitter/X", icon: "🐦", url: "https://x.com/HFR_NOLA" },
     { name: "GitHub", icon: "💻", url: "#" },
-    { name: "Instagram", icon: "📸", url: "#" },
+    { name: "Instagram", icon: "📸", url: "https://www.instagram.com/Happyfuturesrobotics" },
   ];
 
   return (
