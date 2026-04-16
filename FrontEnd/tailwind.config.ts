@@ -42,7 +42,7 @@ export default {
 
   backgroundImage: {
     'brand-gradient': 'linear-gradient(135deg, #121315, #1d2c40, #34486e, #627e9e, #6b95cd, #71bcf9)',
-    'dark-gradient': 'linear-gradient(135deg, #121315, #1d2c40, #767979, #272929, #0C1010, #202323)',
+    'dark-gradient': 'linear-gradient(135deg, #080809f7, #0b1016, #070e0e, #070707, #050707, #090909)',
      'grid-pattern': 'linear-gradient(rgba(107, 205, 200, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(107, 205, 200, 0.05) 1px, transparent 1px)',
   },
  backgroundSize: {
