@@ -23,27 +23,39 @@ function Contact() {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+  try {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/api/contact`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
 
-    // For now, redirect to Linktree or show modal
+    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(data.message || "Something went wrong");
+    }
+
+    console.log("Server response:", data);
+
+    // Success message
+    alert("✅ Message sent successfully!");
+
+    // Optional: still show Linktree if you want
     const userConfirmed = window.confirm(
-      "🚀 Thanks for reaching out! We're currently upgrading our communication systems. \n\n" +
-      "Would you like to connect with us on Linktree while we process your message? \n\n" +
-      "(Your message has been logged and we'll respond via email once our system is live!)"
+      "Want to connect with us on Linktree as well?"
     );
 
     if (userConfirmed) {
       window.open("https://linktr.ee/happyfuturesrobotics", "_blank");
     }
 
-    console.log("Form submitted:", form);
-    setIsSubmitting(false);
-    
     // Reset form
     setForm({
       name: "",
@@ -51,7 +63,14 @@ function Contact() {
       subject: "",
       message: "",
     });
-  };
+
+  } catch (err: any) {
+    console.error(err);
+    alert("❌ Failed to send message. Try again.");
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   useEffect(() => {
     const observer = new IntersectionObserver(
