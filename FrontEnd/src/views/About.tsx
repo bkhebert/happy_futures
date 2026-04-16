@@ -35,7 +35,7 @@ const team: TeamMember[] = [
     title: "Software Engineer",
     image: "BarryProfilePic.png",
     description: "Software developer and Marine veteran architecting scalable digital systems.",
-    bio: "Barrington Hebert is a founding engineer responsible for the company's digital infrastructure — from web and backend systems to data pipelines that support analysis and product development. His work ensures that operational and business systems scale together, with practical, maintainable architecture. Directly partnered with the CEO on technical execution.",
+    bio: "Barrington Hebert is a Marine veteran and software developer responsible for the company's digital infrastructure — from web and backend systems to data pipelines that support analysis and product development. His work ensures that operational and business systems scale together, with practical, maintainable architecture. Directly partnered with the CEO on technical execution.",
     expertise:[
     "Full-Stack Development",
     "API Dsegn & Integration",
