@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const cors = require("cors");
-
+const nodemailer = require("nodemailer");
 const app = express();
 
 // Middleware
@@ -15,13 +15,52 @@ app.get("/", (req, res) => {
 });
 
 // Contact route
-app.post("/api/contact", (req, res) => {
-  const { name, email, message } = req.body;
-
+app.post("/api/contact", async (req, res) => {
+  const { name, email, subject, message } = req.body;
+  const CLIENT_ID = process.env(CLIENT_ID);
+  const CLIENT_SECRET = process.env(CLIENT_SECRET);
+  const REFRESH_TOKEN = process.env(REFRESH_TOKEN);
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      type: "OAuth2",
+      user: "happyfuturestech@gmail.com",
+      clientId: CLIENT_ID,
+      clientSecret: CLIENT_SECRET,
+      refreshToken: REFRESH_TOKEN,
+    },
+  });
+  
   console.log("Incoming contact form:");
-  console.log({ name, email, message });
+  console.log({ name, email, subject, message });
+  
+  const mailOptions = {
+    from: `"${name}" <${email}>`,
+    to: "happyfuturestech@gmail.com",
+    subject: `Contact Form: ${subject}`,
+    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+    html: `
+      <h3>New Contact Form Submission</h3>
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Subject:</strong> ${subject}</p>
+      <p><strong>Message:</strong></p>
+      <p>${message.replace(/\n/g, "<br>")}</p>
+    `,
+  };
 
-  res.json({ success: true });
+  try {
+    await transporter.sendMail(mailOptions);
+    console.log("Email sent successfully!");
+    res.json({ success: true, message: "Email sent!" });
+  } catch (error) {
+    console.error("Email error:", error);
+    res.status(500).json({ 
+      success: false, 
+      error: error.message 
+    });
+  }
+  // ❌ REMOVED the duplicate res.json here
 });
 
 // Start server
