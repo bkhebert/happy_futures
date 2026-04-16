@@ -36,7 +36,7 @@ function Home() {
         <SectionRow
           title="What We Do"
           description="As a small, self-funded team, we are currently in the early stages of designing and prototyping a mobile robot capable of navigating environments independently through the integration of robotics, artificial intelligence, and advanced sensor technologies. Our work is driven by a hands-on, iterative development process, allowing us to rapidly test, refine, and improve our systems without the constraints of traditional funding structures. By combining practical engineering with emerging AI capabilities, we are building a foundation for scalable solutions in autonomous mobility."
-          image={productImage}
+          image={productImage2}
           reverse
         />
 
@@ -48,7 +48,7 @@ function Home() {
         <SectionRow
           title="Why Choose Us"
           description="Happy Futures Robotics is a New Orleans–based startup focused on developing intelligent, autonomous robotic systems for real-world applications. While still in its early phase, Happy Futures Robotics is actively positioning itself to enter the growing market of last-mile automation, with the long-term goal of delivering efficient, adaptable robotic platforms that can operate in dynamic, real-world settings."
-          image={productImage}
+          image={productImage3}
         />
 
         {/* CTA Section */}
