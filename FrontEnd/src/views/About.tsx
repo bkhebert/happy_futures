@@ -21,7 +21,7 @@ const team: TeamMember[] = [
     title: "Founder / CEO / Lead Engineer",
     image: "/MaxProfilePic.png",
     description: "Builder focused on practical, real-world robotics.",
-    bio: "Max Dandry is a hands-on builder with a background in fabrication, electrical work, and rapid prototyping. He builds systems from the ground up, combining mechanical design, electronics, and software into working machines. His approach is rooted in real-world testing, fast iteration, and solving practical problems.",
+    bio: "Max Dandry is a hands-on builder with a background in fabrication, electrical work, and rapid prototyping. He builds complete robotic systems from the ground up, combining mechanical design, electronics, and software into working machines. His approach is rooted in real-world testing, fast iteration, and solving practical problems. He leads technical direction while maintaining direct ownership of system-level integration and testing.",
     expertise: [
     "Robotics Prototyping",
     "Mechanical Fabrication",
@@ -32,32 +32,32 @@ const team: TeamMember[] = [
   },
   {
     name: "Barrington Hebert",
-    title: "Lead Software Engineer",
+    title: "Software Engineer",
     image: "BarryProfilePic.png",
-    description: "Software developer with a passion for robotics and AI.",
-    bio: "Founding engineer working directly with the CEO to build and maintain the company’s digital infrastructure. He develops the website, user experience, and backend systems, while also creating and managing data pipelines that support analysis and future product development. His work focuses on building scalable, practical systems that support both technical operations and business growth.",
+    description: "Software developer and Marine veteran architecting scalable digital systems.",
+    bio: "Barrington Hebert is a founding engineer responsible for the company's digital infrastructure — from web and backend systems to data pipelines that support analysis and product development. His work ensures that operational and business systems scale together, with practical, maintainable architecture. Directly partnered with the CEO on technical execution.",
     expertise:[
     "Full-Stack Development",
-    "React & TypeScript",
-    "Node.js & APIs",
+    "API Dsegn & Integration",
     "Data Handling & Analysis",
-    "Cloud Deployment"
+    "Cloud Infrastructure & Deployment",
+    "CyberSecurity",
   ],
   },
-// {
-//   name: "Justin Tortorich",
-//   title: "VP of IT & Systems Integration",
-//   image: "/JustinProfilePic.jpg",
-//   description: "IT leader and Army veteran building secure, scalable systems for robotics operations.",
-//   bio: "Justin Tortorich is a U.S. Army veteran who deployed to Baghdad for Operation Iraqi Freedom and Operation New Dawn. He brings over a decade of IT leadership experience, most recently as VP of IT at M.S. Rau, where he managed infrastructure, security, and CRM operations. Currently completing his Executive MBA at Tulane, Justin bridges technical systems with business strategy.",
-//   expertise: [
-//     "IT Infrastructure & Security",
-//     "Systems Integration",
-//     "Salesforce Administration",
-//     "Project Management",
-//     "Veteran Leadership"
-//   ],
-// }
+  {
+    name: "Justin Tortorich",
+    title: "IT & Business Development",
+    image: "/JustinProfilePic.jpg",
+    description: "IT leader and Army veteran building secure, scalable systems for robotics operations.",
+    bio: "Justin Tortorich brings over a decade of IT leadership, most recently as VP of IT at M.S. Rau, where he managed infrastructure, security, and CRM operations. A veteran of Operation Iraqi Freedom and Operation New Dawn, he now leads IT and business development — aligning secure, scalable systems with growth strategy. Currently completing his Executive MBA at Tulane.",
+    expertise: [
+      "IT Infrastructure & Security",
+      "Systems Integration",
+      "Salesforce Administration",
+      "Project Management",
+      "Veteran Leadership"
+    ],
+  }
 ];
 
 // Company values
