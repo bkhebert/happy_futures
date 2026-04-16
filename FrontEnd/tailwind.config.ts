@@ -25,7 +25,7 @@ export default {
     border: '#656868',
     muted: '#959898',
     foreground: '#c7cbcb',
-
+    deepBlack: '#040e15ee',
     // Brand / accent system
     primary: '#215374',
     primaryLight: '#628b9e',
