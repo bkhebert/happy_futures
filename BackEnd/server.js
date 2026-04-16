@@ -6,7 +6,26 @@ const nodemailer = require("nodemailer");
 const app = express();
 
 // Middleware
-app.use(cors());
+// Production CORS with specific frontend domain
+const allowedOrigins = [
+  'http://localhost:4173',  // For local development
+  'https://hfrobotics.onrender.com',
+  'https://happyfuturesrobotics.onrender.com',  
+];
+
+app.use(cors({
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl)
+    if (!origin) return callback(null, true);
+    
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  },
+  credentials: true
+}));
 app.use(express.json());
 
 // Test route
@@ -17,9 +36,9 @@ app.get("/", (req, res) => {
 // Contact route
 app.post("/api/contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
-  const CLIENT_ID = process.env(CLIENT_ID);
-  const CLIENT_SECRET = process.env(CLIENT_SECRET);
-  const REFRESH_TOKEN = process.env(REFRESH_TOKEN);
+  const CLIENT_ID = process.env.CLIENT_ID;
+  const CLIENT_SECRET = process.env.CLIENT_SECRET;
+  const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
