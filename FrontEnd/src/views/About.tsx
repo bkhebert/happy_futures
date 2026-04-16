@@ -44,20 +44,20 @@ const team: TeamMember[] = [
     "Cloud Deployment"
   ],
   },
-{
-  name: "Justin Tortorich",
-  title: "VP of IT & Systems Integration",
-  image: "/JustinProfilePic.jpg",
-  description: "IT leader and Army veteran building secure, scalable systems for robotics operations.",
-  bio: "Justin Tortorich is a U.S. Army veteran who deployed to Baghdad for Operation Iraqi Freedom and Operation New Dawn. He brings over a decade of IT leadership experience, most recently as VP of IT at M.S. Rau, where he managed infrastructure, security, and CRM operations. Currently completing his Executive MBA at Tulane, Justin bridges technical systems with business strategy.",
-  expertise: [
-    "IT Infrastructure & Security",
-    "Systems Integration",
-    "Salesforce Administration",
-    "Project Management",
-    "Veteran Leadership"
-  ],
-}
+// {
+//   name: "Justin Tortorich",
+//   title: "VP of IT & Systems Integration",
+//   image: "/JustinProfilePic.jpg",
+//   description: "IT leader and Army veteran building secure, scalable systems for robotics operations.",
+//   bio: "Justin Tortorich is a U.S. Army veteran who deployed to Baghdad for Operation Iraqi Freedom and Operation New Dawn. He brings over a decade of IT leadership experience, most recently as VP of IT at M.S. Rau, where he managed infrastructure, security, and CRM operations. Currently completing his Executive MBA at Tulane, Justin bridges technical systems with business strategy.",
+//   expertise: [
+//     "IT Infrastructure & Security",
+//     "Systems Integration",
+//     "Salesforce Administration",
+//     "Project Management",
+//     "Veteran Leadership"
+//   ],
+// }
 ];
 
 // Company values
