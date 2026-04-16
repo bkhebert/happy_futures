@@ -500,16 +500,20 @@ function JoinUsSection() {
           of autonomous robotics. Ready to make an impact?
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link to="/contact">
           <button className="px-8 py-3 bg-gradient-to-r from-highlight to-glow rounded-xl 
                            text-background font-semibold shadow-glow
                            hover:scale-105 transition-all duration-300">
             View Open Positions
           </button>
+          </Link>
+          <Link to="/contact">
           <button className="px-8 py-3 border border-highlight/50 rounded-xl text-highlight font-semibold
                            backdrop-blur-sm bg-surface/20 hover:bg-highlight/10 
                            transition-all duration-300 hover:scale-105">
             Contact Us
           </button>
+          </Link>
         </div>
       </div>
     </div>
