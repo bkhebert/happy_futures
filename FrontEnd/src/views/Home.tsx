@@ -22,7 +22,7 @@ function Home() {
         {/* HERO SECTION - Special treatment */}
         <HeroSection
           title="Happy Futures Robotics"
-          description="Happy Futures Robotics is an emerging technology company focused on the development of intelligent, autonomous robotic systems. The company is currently designing a next-generation mobile robot capable of navigating real-world environments independently using advanced AI and sensor integration."
+          description="Happy Futures Robotics is an emerging technology company focused on the development of intelligent, autonomous robotic systems. The company is currently designing a next-generation mobile robot capable of navigating real-world environments independently using advanced AI and sensor integration. Currently it is Real-world tested, core behaviors are working, and it acts as an autonomous robot that follows humans intelligently. Contact us for product demonstrations or other inquiries."
           image={productImage}
           logo={logo}
         />
